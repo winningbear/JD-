@@ -1,0 +1,715 @@
+					/* ***********CSS reset******************* */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+					/* ********************CSS reset finish********************* */
+body{
+	font-size: 12px;
+}
+input,button,select,textarea{outline:none}
+					/* ********************头部导航 ************************/
+.header{
+	width: 100%;
+	height: 30px;
+	background-color: #F1F1F1;
+}					
+.header-content{
+	width: 90%;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #F1F1F1;
+}
+.header-send{
+	clear: both;
+}
+.header-content li{
+	position: relative;
+	float: right;
+	padding:0 10px;
+}
+.header-content li img{
+	display: inline-block;
+	width: 2px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+.header-content li a:link{
+	color: #C81623;
+}
+.header-content li a:hover{
+	color: #C81623;
+}
+.sign-free{
+	color: #C81623;
+}
+.header-send{
+	display: inline-block;
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	position: relative;
+	cursor: default;
+}
+.header-send img{
+	width: 15px;
+	height: 10px;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+.header-sendPlace{
+	width: 150px;
+	background-color: #fff;
+	 
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	position:absolute;
+	z-index: 2;
+	display: none; 
+}
+.header-sendPlace td{
+	width: 50px;
+}
+.header-sendPlace a{
+	display: inline-block;
+	width: 50px;
+	height: 30px;	
+}
+.header-sendPlace a:hover{
+	background-color: #C81623;;
+}
+							/* *************头部广告照片************* */
+.header-ad{
+	width: 100%;
+}
+.header-ad img{
+	width: 100%;
+}
+							/* *************搜索框处 *********************/
+.search{
+	width: 100%
+}
+.search-content{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	height: 100px;
+}
+.search-logo{
+	width: 273px;
+	height: 100px;
+	margin-right: 100px;
+	float: left;
+}
+.search-frame{
+	height: 100px;
+	width: 500px;
+	float: left;
+}
+.search-frame input{
+	border:2px solid #C81623;
+	margin-top: 33px;
+	padding: 0;
+	font-size: 18px;
+	float: left; 
+}
+.frame{
+	width: 400px;
+	height: 30px;
+}
+.button{
+	height: 34px;
+	width: 80px;
+	background-color:#C81623; 
+}
+.tip{
+	clear: left; 
+	padding-top:5px;
+}
+.tip a{
+	padding-right:5px;
+}
+.tip a:hover{
+	color: #C81623;
+}
+					/* 			搜索框购物车 */
+.myShoppingCar{
+	width: 100px;
+	height: 34px;
+	border:1px solid #DFDFDF;
+	background-color: #F9F9F9;
+	float: right;
+	line-height: 34px;
+	text-align: center;
+	margin-right: 150px;
+	margin-top: 33px;
+}
+.myShoppingCar a{
+	display: inline-block;
+	width: 100px;
+	height: 34px;
+}
+.myShoppingCar-content1{
+	width: 100px;
+	height: 100px;
+	border:1px solid #DFDFDF;
+	background-color: #F9F9F9;
+	position: absolute;
+	right: 150px;
+	top: 68px;
+	display: none;
+	z-index: 100;
+}
+.myShoppingCar-content2{
+	width: 100px;
+	height: 100px;
+	border:1px solid #DFDFDF;
+	background-color: #F9F9F9;
+	position: absolute;
+	right: 252px;
+	top: 68px;	
+	display: none;
+	z-index: 100;
+}
+							/* ************8内容导航 ************/
+.top-nav{
+	width: 100%;
+	height:40px;
+	border-bottom: 3px solid #C81623;
+}
+.top-nav-content{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 20px;
+}
+.allThing-form{
+	width: 200px;
+	height: 40px;
+	background-color: #C81623;
+	line-height: 40px;
+	float: left;
+ }
+.allThing-form a{
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	padding-left: 5px;
+	color: #fff;
+ }
+ .top-nav-content ul li{
+ 	float: left;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	padding: 0 10px;
+ }
+ 								/* ************中部内容 ***************/
+ .mid{
+ 	width: 100%;
+ }
+ .mid-content{
+ 	width: 90%;
+ 	height: 466px;
+ 	margin: 0 auto;
+ 	position: relative;
+ }
+ 								/* ***************中部侧边栏导航 ************/
+ .mid-navbar{
+ 	font-size: 13px;
+ 	font-weight: bolder;
+ 	width: 200px;
+ 	background: #c91f37;
+ 	float: left;
+ }
+ .mid-navbar ul{
+ 	width: 200px;
+ 	height: 466px;
+
+ }
+ .mid-navbar li{
+ 	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	background-image: url(mid-navbar.png);
+	background-repeat: no-repeat;
+	background-position: 95%;
+	position: relative;
+	
+ }
+ .mid-navbar li a{
+ 	display: inline-block;
+	width: 200px;
+	height: 30px;
+	color: #ffffcc;
+	margin-left: 5px;
+
+ }
+ .mid-navbar li a:hover{
+	color: #c91f37;
+ }
+							/* 中部内容 */
+ .navbar-content{
+	width: 1000px;
+	height: 466px;
+	border-right:1px solid #c91f37;
+ 	border-bottom:1px solid #c91f37; 
+	background-color: #F1F1F1;
+ 	display: none; 
+	position: absolute;
+	left: 200px;
+	z-index: 3;
+} 
+						/* **********	内容焦点轮播图 **************/
+.mid-carousel{
+	height: 452px;
+	width: 700px;
+ 	margin-left: 10px; 
+	margin-top: 10px;
+	background-color: #F1F1F1;
+/* 	border:1px solid #c91f37; */
+	float:left; 
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+}
+.list{
+	height: 452px;
+	width: 5600px;
+	position: absolute;
+	left: -700px;
+	z-index: 2;
+}
+.mid-carousel li{
+	height: 452px;
+	float: left;
+}
+.mid-carousel li img{
+	width: 700px;
+	height: 452px;
+}
+.carousel-right{
+	position: absolute;
+	font-size: 30px;
+	width: 40px;
+	height: 80px;
+	z-index: 2;
+	left: 0px;
+	top: 50%;
+	margin-top: -50px;
+	line-height: 80px;
+	text-align: center;
+	background-color: #000;
+	opacity: 0.7;
+	filter: opacity(70%);
+	cursor: pointer;
+	display: none;
+}
+.carousel-left{
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	z-index: 2;
+	font-size: 30px;
+	right: 0px;
+	top: 50%;
+	margin-top: -50px;
+	line-height: 80px;
+	text-align: center;
+	background-color: #000;
+	opacity: 0.7;
+	filter: opacity(70%);
+	cursor: pointer;
+	display: none;
+}
+							/* ***********内容右半新闻部分 **************/
+.mid-news{
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 270px;
+	height: 452px;
+	float: left;
+	border:1px solid #ccc;
+}
+.news-header{
+	height: 30px;
+	line-height: 30px;
+	font-size: 17px;
+	color: #666666;
+	border-bottom: 1px solid #ccc;
+}
+.news-header strong{
+	margin-left: 10px;
+}
+.news-header span{
+	float: right;
+	margin-right: 10px;
+}
+.news-header span a:hover{
+	color: #c91f37;
+}
+.news-content{
+	color: #666666;
+	font-size: 13px;
+	border-bottom: 1px solid #ccc;
+}
+.news-content li{
+	height: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.news-content li a:hover{
+	color: #c91f37;
+}
+.news-bottom{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.news-bottom li{
+	display: inline-block;
+	width: 60px;
+	height: 80px;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 5px;
+	float: left;
+	border:0 1px 1px 1px solid #ccc;
+}
+.news-bottom li img{
+	margin-top: 25px;
+	width: 25px;
+	height: 25px;
+}
+.news-bottom li a:hover{
+	color: #c91f37;
+}
+						/* ************中部轮播图广告 ***************/
+.ad-carousel{
+	width: 100%;
+	height: 155px;
+	margin-top: 10px;
+}
+.ad-carousel-content{
+	width: 90%;
+	margin:0 auto;
+}
+.ad-carouselLeft{
+	float:left;
+	
+}
+.ad-carouselLeft img{
+	width: 200px;
+	height: 155px;
+}
+.ad-carouselRight{	
+	float: left;
+	position: relative;
+	width:1000px;
+	height: 155px;
+	overflow: hidden;
+}
+.ad-list{
+	width: 4000px;
+	position: absolute;
+	z-index: 2;
+	left: -1000px;
+
+}
+.ad-list li{
+	float: left;
+}
+.ad-list li a img{
+	display: inline-block;
+	width: 250px;
+	height: 155px;
+	padding: 0;
+}
+.ad-carousel-pre{
+	position: absolute;
+	font-size: 20px;
+	width: 20px;
+	height: 50px;
+	z-index: 2;
+	left: 0px;
+	color: #fff;
+	top: 50%;
+	margin-top: -25px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #000;
+	opacity: 0.3;
+	filter: opacity(30%);
+	cursor: pointer;
+	display: none;
+}
+.ad-carousel-next{
+	position: absolute;
+	font-size: 20px;
+	width: 20px;
+	height: 50px;
+	z-index: 2;
+	right: 0px;
+	color: #fff;
+	top: 50%;
+	margin-top: -25px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #000;
+	opacity: 0.3;
+	filter: opacity(30%);
+	cursor: pointer;
+	display: none;
+}
+							/* *********88中部第二个广告图片 *************/
+.ad_2{
+	width: 100%;
+	height: 120px;
+	margin-top: 20px;
+}
+.ad_2-content{
+	width: 90%;
+	margin: 0 auto;
+}
+.ad_2-content img{
+	width: 100%;
+}
+							/* ************X楼层样式 ****************/
+.xFloor{
+	width: 90%;
+	margin: 0 auto;
+}
+.floor-header{
+	width: 100%;
+	margin-top: 20px;
+	height: 35px;
+	position: relative;
+}
+.floor-header span{
+	position: absolute;
+	font-size: 22px;
+	color: #333333;
+	height: 35px;
+	border-bottom: 1px solid #C81623;
+}
+#first-span{
+	width: 668.1px;
+}
+.floor-header span img{
+	float: left;
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+}
+.floor-header span p{
+	position: absolute;
+	font-size: 22px;
+	color: #333333;
+	left: 35px;
+	top: 5px;
+}
+.floor-header li{
+	float: right;
+	display: inline-block;
+	padding: 10px 10px;
+	position: relative;	
+	border-top: 1px solid #ccc;
+	font-size: 14px;
+	border-bottom: 1px solid #C81623;
+}
+.floor-header li a{
+	color: #666666;
+}
+.floor-header li:first-child{
+	border-right: 1px solid #ccc;
+}
+.floor-header li:last-child{
+	border-left: 1px solid #ccc;
+}
+.floor-header li img{
+	display: inline-block;
+	position: absolute;
+	width: 3px;
+	height: 15px;
+	right: 0px;
+	top: 10px;
+}
+.floor-content img{
+	width: 100%;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+#second-span{
+	width: 557px;
+}
+#third-span{
+	width:703px;
+}
+#fourth-span{
+	width: 578px;
+}
+#fifth-span{
+	width: 550px;
+}
+#sixth-span{
+	width: 709px;
+}
+
+							/* **********	左边楼层跟随 */
+.trace{
+	position: fixed;
+	left: 2.5%;
+	top: 40%;
+	display: none; 
+}
+.trace li{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom:1px dashed #ccc;
+	text-align: center;
+	background-color: red;	
+} 
+.b-color{
+	
+}
+.trace li a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	font-size: 13px;
+	color: #333333;
+	line-height: 30px;
+}
+
+
+
+
+								/* **************右边ICON ***************/
+.right-side{
+	height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0px;	
+}
+.right-side-icon{
+	position: absolute;
+	right: 10px; 
+	top: 300px;
+	z-index: 2;
+}
+.right-icon{
+	display: block;
+	margin-top: 3px;
+	width: 30px;
+	height: 30px; 
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	position: relative;
+}
+.right-side-icon li:nth-child(5){
+	margin-top: 50px;
+}
+.right-side img{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.right-icon-slide{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	position: absolute;
+	z-index: -1;
+	left: 0px;
+	top: 0px;
+	background-color: #666666;
+	color: #fff;
+	line-height: 30px;
+	padding-left: 15px;
+	font-family: '微软雅黑';
+}
+.right{
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	background-color: #666666;
+}
+								/* *************底部图片***************** */
+.footer{
+	width: 100%;
+}
+.footer-ad{
+	width: 100%;
+	margin-top: 20px;
+}
+.footer-ad img{
+	width:100%;
+}
+.footer-pic{
+	width: 90%;
+	margin:0 auto;
+}
+
+
+
