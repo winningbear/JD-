@@ -51,13 +51,14 @@ table {
 }
 a{
 	text-decoration: none;
+	color:#333333;
 }
 					/* ********************CSS reset finish********************* */
 body{
 	font-size: 12px;
 }
 input,button,select,textarea{outline:none}
-					/* ********************头部导航 ************************/
+			/* ********************头部导航 ************************/
 .header{
 	width: 100%;
 	height: 30px;
@@ -87,9 +88,9 @@ input,button,select,textarea{outline:none}
 	right: 0;
 	top: 5px;
 }
-.header-content li a:link{
+/* .header-content li a{
 	color: #C81623;
-}
+} */
 .header-content li a:hover{
 	color: #C81623;
 }
@@ -257,6 +258,9 @@ input,button,select,textarea{outline:none}
  	height: 40px;
  	line-height: 40px;
  	padding: 0 10px;
+ }
+ .top-nav-content ul li a:hover{
+ 	color: #C81623;
  }
  								/* ************中部内容 ***************/
  .mid{
@@ -594,19 +598,19 @@ input,button,select,textarea{outline:none}
 	border-bottom: 1px solid #ccc;
 }
 #second-span{
-	width: 557px;
+	width: 46%;
 }
 #third-span{
-	width:703px;
+	width:58%;
 }
 #fourth-span{
-	width: 578px;
+	width: 47.5%;
 }
 #fifth-span{
-	width: 550px;
+	width: 45.3%;
 }
 #sixth-span{
-	width: 709px;
+	width: 58.4%;
 }
 
 							/* **********	左边楼层跟随 */
