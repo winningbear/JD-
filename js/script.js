@@ -83,7 +83,6 @@ var EventUtil = {
 	GLOBAL.Dom.myShoppingCar=getElementsByClass('myShoppingCar')[0];
 	GLOBAL.Dom.myShoppingCarContent1=getElementsByClass('myShoppingCar-content1')[0];
 	GLOBAL.Dom.myShoppingCarContent2=getElementsByClass('myShoppingCar-content2')[0];
-	alert(GLOBAL.Dom.headerSend);
 	GLOBAL.Dom.headerSend.onmouseover=function(){
 		this.style.backgroundColor='#fff';
 		this.style.borderLeft="thin solid #ccc";
