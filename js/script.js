@@ -78,7 +78,6 @@ var EventUtil = {
 	window.onload=function(){
 	GLOBAL.namespace('Dom'); /*用命名空间的子元素来定义Dom节点*/
 	/*头部运送按钮监听事件*/
-	
 	GLOBAL.Dom.headerSend=getElementsByClass('header-send')[0];
 	GLOBAL.Dom.headerSendPlace=getElementsByClass('header-sendPlace')[0];
 	GLOBAL.Dom.myShoppingCar=getElementsByClass('myShoppingCar')[0];
@@ -161,22 +160,23 @@ var EventUtil = {
 	/******************侧边栏监听事件**************/
 	
 		GLOBAL.Dom.midNavbar=getElementsByClass('mid-navbar')[0].getElementsByTagName('li');
-		GLOBAL.Dom.navbarContent=getElementsByClass('navbar-content')[0];
+		GLOBAL.Dom.navbarContent=getElementsByClass('navbar-content');
 		for(var i=0;i<GLOBAL.Dom.midNavbar.length;i++){
-			GLOBAL.Dom.midNavbar[i].onmouseover=function(){
+			GLOBAL.Dom.midNavbar[i]._index=i;
+
+			GLOBAL.Dom.midNavbar[i].onmouseover=function(){			
 				this.style.backgroundColor='#F1F1F1';
 				this.style.backgroundImage='none';
-				GLOBAL.Dom.navbarContent.style.display='block';
+				GLOBAL.Dom.navbarContent[this._index].style.display='block';
 			}
 			GLOBAL.Dom.midNavbar[i].onmouseout=function(){
 				this.style.backgroundColor='#c91f37';
 				this.style.backgroundImage='url(images/mid-navbar.png)';
-				GLOBAL.Dom.navbarContent.style.display='none';
+				GLOBAL.Dom.navbarContent[this._index].style.display='none';
 			}
 		}
 	
 	/******************中部焦点轮播图*******************/	
-	(function(){
 		GLOBAL.Dom.carousel=getElementsByClass('mid-carousel')[0];
 		GLOBAL.Dom.list=getElementsByClass('list')[0];
 		GLOBAL.Dom.carouselLeft=getElementsByClass('carousel-left')[0];
@@ -243,7 +243,6 @@ var EventUtil = {
 			GLOBAL.Dom.carouselLeft.style.display='none';
 			GLOBAL.Dom.carouselRight.style.display='none';
 	}		
-	}());
 		/**********广告栏的轮播图**************/
 	
 		GLOBAL.Dom.adList=getElementsByClass('ad-list')[0];

@@ -319,6 +319,10 @@ input,button,select,textarea{outline:none}
 	position: absolute;
 	left: 200px;
 	z-index: 3;
+	color: #000;
+	font-size: 50px;
+	text-align: center;
+	line-height: 466px;
 } 
 						/* **********	内容焦点轮播图 **************/
 .mid-carousel{
