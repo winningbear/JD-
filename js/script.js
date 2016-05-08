@@ -177,6 +177,7 @@ var EventUtil = {
 		}
 	
 	/******************中部焦点轮播图*******************/	
+	(function(){
 		GLOBAL.Dom.carousel=getElementsByClass('mid-carousel')[0];
 		GLOBAL.Dom.list=getElementsByClass('list')[0];
 		GLOBAL.Dom.carouselLeft=getElementsByClass('carousel-left')[0];
@@ -242,7 +243,8 @@ var EventUtil = {
 			play();
 			GLOBAL.Dom.carouselLeft.style.display='none';
 			GLOBAL.Dom.carouselRight.style.display='none';
-	}		
+	}
+}());		
 		/**********广告栏的轮播图**************/
 	
 		GLOBAL.Dom.adList=getElementsByClass('ad-list')[0];
@@ -292,6 +294,7 @@ var EventUtil = {
 			GLOBAL.Dom.adCarouselPre.style.display='none';
 			GLOBAL.Dom.adCarouselNext.style.display='none';			
 }
+
 
 		/***************第x层楼导航栏**************/
 		
