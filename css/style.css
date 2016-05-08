@@ -59,6 +59,7 @@ body{
 input,button,select,textarea{outline:none}
 .wrapper{
 	width: 1349px;
+	margin: 0 auto;
 }
 .wrapper a{
 	color: #333333;
