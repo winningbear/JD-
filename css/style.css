@@ -57,6 +57,9 @@ body{
 	font-size: 12px;
 }
 input,button,select,textarea{outline:none}
+.wrapper{
+	width: 1349px;
+}
 .wrapper a{
 	color: #333333;
 }
@@ -102,7 +105,7 @@ input,button,select,textarea{outline:none}
 .header-send{
 	display: inline-block;
 	height: 30px;
-	width: 100px;
+	width: 9%;
 	text-align: center;
 	position: relative;
 	cursor: default;
