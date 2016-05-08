@@ -51,13 +51,15 @@ table {
 }
 a{
 	text-decoration: none;
-	color:#333333;
 }
 					/* ********************CSS reset finish********************* */
 body{
 	font-size: 12px;
 }
 input,button,select,textarea{outline:none}
+.wrapper a{
+	color: #333333;
+}
 			/* ********************头部导航 ************************/
 .header{
 	width: 100%;

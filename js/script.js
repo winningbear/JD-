@@ -1,4 +1,4 @@
-window.onload=function(){
+
 
 			/*使用命名空间，避免全局变量污染*/
 	var GLOBAL={};
@@ -75,9 +75,10 @@ var EventUtil = {
 		}
 		return elements;
 	}
+	window.onload=function(){
 	GLOBAL.namespace('Dom'); /*用命名空间的子元素来定义Dom节点*/
 	/*头部运送按钮监听事件*/
-	(function(){
+	
 	GLOBAL.Dom.headerSend=getElementsByClass('header-send')[0];
 	GLOBAL.Dom.headerSendPlace=getElementsByClass('header-sendPlace')[0];
 	GLOBAL.Dom.myShoppingCar=getElementsByClass('myShoppingCar')[0];
@@ -155,10 +156,10 @@ var EventUtil = {
 		GLOBAL.Dom.myShoppingCar.style.boxShadow='none';
 		GLOBAL.Dom.myShoppingCar.style.borderBottom='1px solid #DFDFDF';
 	}
-	})();
+
 
 	/******************侧边栏监听事件**************/
-	(function(){
+	
 		GLOBAL.Dom.midNavbar=getElementsByClass('mid-navbar')[0].getElementsByTagName('li');
 		GLOBAL.Dom.navbarContent=getElementsByClass('navbar-content')[0];
 		for(var i=0;i<GLOBAL.Dom.midNavbar.length;i++){
@@ -173,7 +174,7 @@ var EventUtil = {
 				GLOBAL.Dom.navbarContent.style.display='none';
 			}
 		}
-	})();
+	
 	/******************中部焦点轮播图*******************/	
 	(function(){
 		GLOBAL.Dom.carousel=getElementsByClass('mid-carousel')[0];
@@ -244,7 +245,7 @@ var EventUtil = {
 	}		
 	}());
 		/**********广告栏的轮播图**************/
-	(function(){
+	
 		GLOBAL.Dom.adList=getElementsByClass('ad-list')[0];
 		GLOBAL.Dom.adCarouselRight=getElementsByClass('ad-carouselRight')[0];
 		GLOBAL.Dom.adCarouselNext=getElementsByClass('ad-carousel-next')[0];
@@ -292,9 +293,9 @@ var EventUtil = {
 			GLOBAL.Dom.adCarouselPre.style.display='none';
 			GLOBAL.Dom.adCarouselNext.style.display='none';			
 }
-}());
+
 		/***************第x层楼导航栏**************/
-		(function(){
+		
 			GLOBAL.Dom.floorHeader=getElementsByClass('floor-header');
 			for(var j=0;j<GLOBAL.Dom.floorHeader.length;j++){
 				GLOBAL.Dom.floorHeader[j].onmouseover=function(){
@@ -327,10 +328,10 @@ var EventUtil = {
 			}	
 		}
 			
-		}());
+		
 
 		/************************楼层跟随导航************************/
-		(function(){
+		
 			GLOBAL.Dom.trace=getElementsByClass('trace')[0];
 			GLOBAL.Dom.traceLi=GLOBAL.Dom.trace.getElementsByTagName('li');	
 			var top=window.pageYOffset|| document.documentElement.scrollTop || document.body.scrollTop;
@@ -428,9 +429,9 @@ var EventUtil = {
 					GLOBAL.Dom.traceLi[5].style.backgroundColor='#C81623';
 				}
 			}				
-		}());
+		
 		/***********************************右侧icon栏***************************/
-		(function(){
+		
 			GLOBAL.Dom.rightIcon=getElementsByClass('right-side-icon')[0].getElementsByTagName('li');
 			GLOBAL.Dom.rightIconSlide=getElementsByClass('right-icon-slide');
 			var timer=null;
@@ -473,5 +474,5 @@ var EventUtil = {
 					slide();											
 				}		
 			}
-		}());	
+			
 }
