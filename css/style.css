@@ -81,10 +81,24 @@ input,button,select,textarea{outline:none}
 .header-send{
 	clear: both;
 }
+.header-content ul{
+	display: inline-block;
+	float: right;
+}
 .header-content li{
 	position: relative;
 	float: right;
 	padding:0 10px;
+}
+.clearfix:after{
+	content:'';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix{
+	*zoom:1;
 }
 .header-content li img{
 	display: inline-block;
@@ -94,9 +108,7 @@ input,button,select,textarea{outline:none}
 	right: 0;
 	top: 5px;
 }
-/* .header-content li a{
-	color: #C81623;
-} */
+
 .header-content li a:hover{
 	color: #C81623;
 }
@@ -258,6 +270,10 @@ input,button,select,textarea{outline:none}
 	height: 40px;
 	padding-left: 5px;
 	color: #fff;
+ }
+ .top-nav-content ul{
+ 	display: inline-block;
+
  }
  .top-nav-content ul li{
  	float: left;
