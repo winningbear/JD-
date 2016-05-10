@@ -99,9 +99,19 @@ var EventUtil = {
 	}
 	GLOBAL.Dom.headerSendPlace.onmouseover=function(){
 		this.style.display='block';
+		GLOBAL.Dom.headerSend.style.backgroundColor='#fff';
+		GLOBAL.Dom.headerSend.style.borderLeft="thin solid #ccc";
+		GLOBAL.Dom.headerSend.style.borderRight="thin solid #ccc";
+		GLOBAL.Dom.headerSend.getElementsByTagName('img')[0].src="images/header-up.png";
+
 	}
 	GLOBAL.Dom.headerSendPlace.onmouseout=function(){
 		this.style.display='none';
+		GLOBAL.Dom.headerSend.style.backgroundColor='#F1F1F1';
+		GLOBAL.Dom.headerSend.style.borderLeft="none";
+		GLOBAL.Dom.headerSend.style.borderRight="none";
+		GLOBAL.Dom.headerSend.getElementsByTagName('img')[0].src="images/header-down.png";
+
 	}
 	/*购物车监听事件*/
 	GLOBAL.Dom.myShoppingCar.onmouseover=function(){
@@ -218,6 +228,8 @@ var EventUtil = {
 			clearInterval(timer);
 		}
 		GLOBAL.Dom.carouselLeft.onclick=function(){
+			event=EventUtil.getEvent(event);
+			EventUtil.stopPropagation(event);
 			if(!animated){
 				if(animated){
 					return;
@@ -226,6 +238,8 @@ var EventUtil = {
 			}
 		}
 		GLOBAL.Dom.carouselRight.onclick=function(){
+			event=EventUtil.getEvent(event);
+			EventUtil.stopPropagation(event);
 			if(!animated){
 				if(animated){
 					return;
