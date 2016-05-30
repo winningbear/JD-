@@ -75,7 +75,7 @@ var EventUtil = {
 		}
 		return elements;
 	}
-	window.onload=function(){
+window.onload=function(){
 	GLOBAL.namespace('Dom'); /*用命名空间的子元素来定义Dom节点*/
 	/*头部运送按钮监听事件*/
 	GLOBAL.Dom.headerSend=getElementsByClass('header-send')[0];
@@ -227,9 +227,7 @@ var EventUtil = {
 		function stop(){
 			clearInterval(timer);
 		}
-		GLOBAL.Dom.carouselLeft.onclick=function(){
-			event=EventUtil.getEvent(event);
-			EventUtil.stopPropagation(event);
+		GLOBAL.Dom.carouselLeft.onclick=function(event){	
 			if(!animated){
 				if(animated){
 					return;
@@ -237,9 +235,7 @@ var EventUtil = {
 				animating(-700);
 			}
 		}
-		GLOBAL.Dom.carouselRight.onclick=function(){
-			event=EventUtil.getEvent(event);
-			EventUtil.stopPropagation(event);
+		GLOBAL.Dom.carouselRight.onclick=function(event){
 			if(!animated){
 				if(animated){
 					return;
@@ -291,13 +287,13 @@ var EventUtil = {
 				go();
 		}
 		GLOBAL.Dom.adCarouselNext.onclick=function(event){
-			event=EventUtil.getEvent(event);
-			EventUtil.stopPropagation(event);
+			var ev=EventUtil.getEvent(event);
+			EventUtil.stopPropagation(ev);
 			animating1(-1000);
 		}	
 		GLOBAL.Dom.adCarouselPre.onclick=function(event){
-			event=EventUtil.getEvent(event);
-			EventUtil.stopPropagation(event);
+			var ev=EventUtil.getEvent(event);
+			EventUtil.stopPropagation(ev);
 			animating1(1000);
 		}
 		GLOBAL.Dom.adCarouselRight.onmouseover=function(){		
